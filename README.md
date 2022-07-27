@@ -1,1 +1,5 @@
-# Kokoa Clone 2022 for HTML, CSS lecture!
+# Kokoa Clone 2022
+
+HTML, CSS lecture
+
+HTML & CSS are so much fun!
