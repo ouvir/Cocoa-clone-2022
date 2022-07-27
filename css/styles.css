@@ -14,6 +14,9 @@ body {
   align-items: center;
   cursor: default;
 }
+.welcome-header__img {
+  width: 80px;
+}
 .welcome-header__title {
   margin-bottom: 40px;
   font-size: 25px;
