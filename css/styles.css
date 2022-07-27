@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600;700&display=swap");
+@import "reset.css";
+@import "variables.css";
+@import "status-bar.css";
+body {
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.welcome-header {
+  margin: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+  font-weight: 700;
+  transition: color 1s ease-out;
+}
+.welcome-header__title:hover {
+  color: var(--yellow);
+}
+.welcome-header__text {
+  width: 60%;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+#login-form input {
+  border: none;
+  padding: 20px 0px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+#login-form input:not([type="submit"]) {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+
+#login-form input::placeholder {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+#login-form input:focus {
+  border-color: var(--brown);
+}
+
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  font-size: 13px;
+}
