@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Cocoa Clone</title>
+    <title>Friends | Cocoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -23,32 +23,94 @@
       </div>
     </div>
 
-    <header class="welcome-header">
-      <img class="welcome-header__img" src="img/kokoa.jpg" />
-      <h1 class="welcome-header__title">Welcome to Cocoa Clone</h1>
-      <p class="welcome-header__text">
-        If you have a Cocoa Account, log in with your email or phone number.
-      </p>
+    <header class="screen-header">
+      <h1 class="screen-header__title">Friends</h1>
+      <div class="screen-header__icons">
+        <!-- glass icon -->
+        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <!-- music icon -->
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
+        <!-- gear icon -->
+        <span><i class="fa-solid fa-gear fa-lg"></i></span>
+      </div>
     </header>
 
-    <form action="friends.html" method="get" class="login-form">
-      <input
-        required
-        name="username"
-        class="login-form__input"
-        type="text"
-        placeholder="Email or phone number"
-      />
-      <input
-        required
-        name="password"
-        class="login-form__input"
-        type="password"
-        placeholder="Password"
-      />
-      <input class="login-form__btn" type="submit" value="Log In" />
-      <a class="login-form__a" href="#">Find Cocoa Account or Password</a>
-    </form>
+    <a id="friends-display-link">
+      <!-- info circle icon -->
+      <i class="fa-solid fa-circle-info"></i>
+      Friends'Names Display
+      <!-- chevron icon -->
+      <i class="fa-solid fa-chevron-right fa-xs"></i>
+    </a>
+
+    <main class="friends-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/KakaoTalk_20220728_144817230.jpg"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Alinker</h4>
+            <!-- <h6 class="user-component__subtitle">this text whatever</h6> -->
+          </div>
+        </div>
+        <div class="user-component__column"></div>
+      </div>
+      <div class="friends-screen__channel">
+        <div class="friends-screen__channel-header">
+          <span>Channel</span>
+          <i class="fa-solid fa-chevron-up fa-xs"></i>
+        </div>
+        <div class="user-component">
+          <div class="user-component__column">
+            <img
+              src="img/KakaoTalk_20220728_144817230.jpg"
+              class="user-component__avatar user-component__avatar--sm"
+            />
+            <div class="user-component__text">
+              <h4 class="user-component__title user-component__title--not-bold">
+                Channel
+              </h4>
+            </div>
+          </div>
+          <div class="user-component__column">
+            <span>2</span>
+            <i class="fa-solid fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <!-- user icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-user fa-2x"></i>
+          </a>
+        </li>
+        <!-- comment icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <span class="nav__notification">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <!-- search icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <!-- ellipsis icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="#">
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
     <script
       src="https://kit.fontawesome.com/8cd610e6c7.js"
