@@ -1,0 +1,135 @@
+.gear__notification {
+  position: relative;
+}
+.find-icons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+}
+
+.find-icons__icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--brown);
+}
+
+.find-icons__icon i {
+  font-size: 20px;
+}
+
+.find-icons__icon span {
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.recommended-friends {
+  border-top: var(--main-border);
+  padding: 15px 0px;
+}
+
+.recommended-friends__title {
+  font-size: 12px;
+  color: var(--gray);
+}
+
+.recommended-friends span {
+  margin: 80px 0;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: var(--gray);
+}
+
+.open-chat {
+  border-top: var(--main-border);
+  padding: 15px 0px;
+}
+
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+.open-chat__header span {
+  font-size: 10px;
+  opacity: 0.8;
+}
+.open-chat__title {
+  font-size: 12px;
+}
+
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open-post__title {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.open-post__hashtags {
+  text-transform: uppercase;
+  color: var(--gray);
+  font-size: 10px;
+}
+
+.open-post__members {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 8px;
+}
+
+.open-post__members img {
+  margin-right: 5px;
+}
+
+.open-post__member-count {
+  color: var(--gray);
+}
+
+.open-post__members .divider {
+  width: 2px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: var(--main-opacity);
+}
+
+.open-post__member-status {
+  color: #ffb0e0;
+}
+
+.open-post__photo {
+  position: relative;
+}
+.open-post__photo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+}
+
+.open-post__heart-count {
+  background-color: var(--gray);
+  color: white;
+  padding: 3px;
+  border-radius: 10px;
+  align-items: center;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+  font-size: 12px;
+}
+
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+.open-post__photo a {
+  display: none;
+}

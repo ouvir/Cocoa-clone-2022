@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .user-component,
@@ -13,17 +14,25 @@
   height: 50px;
   border-radius: 30%;
   margin-right: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: var(--main-border);
 }
 
 .user-component__title {
   font-weight: 700;
   font-size: 20px;
 }
+.user-component__title--sm {
+  font-weight: 700;
+  font-size: 15px;
+}
 
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 15px;
+}
+.user-component__subtitle--sm {
+  margin-top: 8px;
+  font-size: 12px;
 }
 
 .user-component__avatar--xl {
@@ -36,12 +45,16 @@
   height: 40px;
 }
 
+.user-component__avatar--xs {
+  width: 20px;
+  height: 20px;
+}
 .user-component__title--not-bold {
   font-weight: 400;
 }
 
 .user-component__column:last-child {
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
   display: flex;
   flex-direction: column;
   align-items: flex-end;

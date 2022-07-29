@@ -5,7 +5,7 @@
   box-sizing: border-box; /* 마법의 줄 */
   background-color: #f9f9fa;
   padding: 20px 40px;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: var(--main-border);
 }
 
 .nav__list {
@@ -19,7 +19,12 @@
 }
 
 .nav__notification {
-  position: absolute;
   right: -10px;
   bottom: 15px;
+  position: absolute;
+}
+
+.nav__notification--dot {
+  right: -5px;
+  bottom: 25px;
 }

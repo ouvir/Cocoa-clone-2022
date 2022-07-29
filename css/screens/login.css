@@ -48,14 +48,9 @@
   margin-bottom: 20px;
 }
 
-.login-form__input {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
-  transition: border-color 0.3s ease-in-out;
-}
-
 .login-form__input::placeholder {
   font-family: "Edu NSW ACT Foundation", cursive;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
 }
 
 .login-form__input:focus {

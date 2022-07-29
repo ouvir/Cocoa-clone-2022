@@ -14,3 +14,8 @@
 .screen-header__icons span {
   margin-left: 25px;
 }
+
+.screen-header__notification--dot {
+  right: -8px;
+  top: -3px;
+}
