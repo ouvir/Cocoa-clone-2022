@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings | Cocoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span id="time">time</span>
+      </div>
+      <div class="status-bar__column">
+        <span>11%</span>
+        <i class="fa-solid fa-battery-quarter fa-lg"></i>
+        <i class="fa-solid fa-bolt-lightning fa-sm"></i>
+      </div>
+    </div>
+
+    <main class="main-screen more-screen"></main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <!-- user icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <!-- comment icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <!-- search icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <!-- ellipsis icon -->
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__notification--dot badge--dot"></div>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/8cd610e6c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="JS/clock.js"></script>
+  </body>
+</html>

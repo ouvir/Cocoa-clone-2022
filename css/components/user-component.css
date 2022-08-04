@@ -29,6 +29,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 15px;
+  display: flex;
 }
 .user-component__subtitle--sm {
   margin-top: 8px;
@@ -63,4 +64,9 @@
 .user-component__time {
   display: block;
   margin-bottom: 5px;
+}
+
+.user-component__notification {
+  color: tomato;
+  margin-left: 5px;
 }

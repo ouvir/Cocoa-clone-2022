@@ -18,4 +18,5 @@
 .screen-header__notification--dot {
   right: -8px;
   top: -3px;
+  position: absolute;
 }

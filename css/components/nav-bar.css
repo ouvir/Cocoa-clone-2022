@@ -27,4 +27,5 @@
 .nav__notification--dot {
   right: -5px;
   bottom: 25px;
+  position: absolute;
 }

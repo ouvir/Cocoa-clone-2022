@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find | Cocoa Clone</title>
+    <title>More | Cocoa Clone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -24,10 +24,12 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <!-- glass icon -->
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <!-- music icon -->
+        <span><i class="fa-solid fa-music fa-lg"></i></span>
         <!-- gear icon -->
         <span class="gear__notification">
           <a href="settings.html">
@@ -38,68 +40,81 @@
       </div>
     </header>
 
-    <main class="main-screen">
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="img/KakaoTalk_20220728_144817230.jpg"
+            class="user-component__avatar user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Alinker</h4>
+            <h6 class="user-component__subtitle">
+              qazxc155580@gmail.com
+              <i
+                class="fa-solid fa-circle-exclamation user-component__notification"
+              >
+              </i>
+            </h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <i class="fa-regular fa-message fa-2x"></i>
+        </div>
+      </div>
       <div class="icon-row">
         <div class="icon-row__icon">
-          <!-- QR code icon -->
-          <i class="fa-solid fa-qrcode"></i>
-          <span>QR Code</span>
+          <!-- calendar icon -->
+          <i class="fa-solid fa-calendar-days"></i>
+          <span>Calendar</span>
         </div>
         <div class="icon-row__icon">
           <!-- address-book icon -->
           <i class="fa-regular fa-address-book"></i>
-          <span>Add by Contacts</span>
+          <span>Talk Drive</span>
         </div>
         <div class="icon-row__icon">
           <!-- fingerprint icon -->
-          <i class="fa-solid fa-fingerprint"></i>
-          <span>Add by ID</span>
+          <i class="fa-regular fa-face-grin"></i>
+          <span>Emoticons</span>
         </div>
         <div class="icon-row__icon">
           <!-- envelope icon -->
-          <i class="fa-regular fa-envelope"></i>
-          <span>Invite</span>
+          <i class="fa-solid fa-brush"></i>
+          <span>Themes</span>
         </div>
       </div>
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
-      </div>
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4 class="open-chat__title">Open Chat</h4>
-          <span>
-            Go to Openchat Home <i class="fa-solid fa-chevron-right fa-xs"></i>
-          </span>
+      <div class="icon-row icon-row-second_line">
+        <div class="icon-row__icon">
+          <!-- envelope icon -->
+          <i class="fa-solid fa-file-invoice-dollar"></i>
+          <span>Account</span>
         </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">#DOG</h5>
-            <h6 class="open-post__hashtags">#dog#animal#friends</h6>
-            <div class="open-post__members">
-              <img
-                class="user-component__avatar user-component__avatar--xs"
-                src="https://img.freepik.com/free-photo/cute-little-dog-isolated-on-yellow_23-2148985931.jpg?size=626&ext=jpg"
-              />
-              <span class="open-post__member-count">802 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
-            </div>
-          </div>
-          <div class="open-post__column">
-            <div class="open-post__photo">
-              <img
-                src="https://cdn.pixabay.com/photo/2018/05/17/06/22/dog-3407906_960_720.jpg"
-              />
-              <div class="open-post__heart-count">
-                <i class="fa-solid fa-heart fa-xs"></i><span>326</span>
-              </div>
-              <a href="https://kr.freepik.com/photos/dog">kr.freepik.com</a>
-            </div>
-          </div>
+        <div class="icon-row__icon">
+          <!-- Openchat icon -->
+          <i class="fa-regular fa-comments"></i>
+          <span>Openchat</span>
         </div>
       </div>
     </main>
+
+    <div class="more-suggestions">
+      <h4 class="more-suggestions__title">Suggestions</h4>
+      <div class="more-suggestions__icons">
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fa-solid fa-quote-right fa-xl"></i>
+          </div>
+          <span class="more-suggestions__icon-text">Cocoa Story</span>
+        </div>
+        <div class="more-suggestions__icon">
+          <div class="more-suggestions__icon-image">
+            <i class="fa-solid fa-quote-right fa-xl"></i>
+          </div>
+          <span class="more-suggestions__icon-text">Cocoa Story</span>
+        </div>
+      </div>
+    </div>
 
     <nav class="nav">
       <ul class="nav__list">
