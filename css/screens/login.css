@@ -14,7 +14,7 @@
 
 .welcome-header__title {
   margin-bottom: 40px;
-  font-size: 25px;
+  font-size: var(--font-size-xl);
   font-weight: 700;
   transition: color 1s ease-out;
 }
@@ -44,7 +44,7 @@
 .login-form input {
   border: none;
   padding: 20px 0px;
-  font-size: 15px;
+  font-size: var(--font-size-sm);
   margin-bottom: 20px;
 }
 
@@ -68,5 +68,5 @@
 
 .login-form__a {
   text-align: center;
-  font-size: 13px;
+  font-size: var(--font-size-xs);
 }

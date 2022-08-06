@@ -8,10 +8,11 @@
   cursor: default;
   border-bottom: var(--main-border);
   background-color: white;
+  z-index: 2;
 }
 
 .status-bar div {
-  font-size: 15px;
+  font-size: var(--font-size-sm);
   font-weight: 600;
 }
 

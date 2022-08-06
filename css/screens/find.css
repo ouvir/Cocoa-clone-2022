@@ -8,7 +8,7 @@
 }
 
 .recommended-friends__title {
-  font-size: 12px;
+  font-size: var(--font-size-xs);
   color: var(--gray);
 }
 
@@ -16,7 +16,7 @@
   margin: 80px 0;
   display: block;
   text-align: center;
-  font-size: 15px;
+  font-size: var(--font-size-sm);
   color: var(--gray);
 }
 
@@ -33,11 +33,11 @@
 }
 
 .open-chat__header span {
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   opacity: 0.8;
 }
 .open-chat__title {
-  font-size: 12px;
+  font-size: var(--font-size-xs);
 }
 
 .open-post {
@@ -49,20 +49,20 @@
 .open-post__title {
   font-weight: 700;
   margin-bottom: 5px;
-  font-size: 15px;
+  font-size: var(--font-size-sm);
 }
 
 .open-post__hashtags {
   text-transform: uppercase;
   color: var(--gray);
-  font-size: 10px;
+  font-size: var(--font-size-xs);
 }
 
 .open-post__members {
   margin-top: 5px;
   display: flex;
   align-items: center;
-  font-size: 8px;
+  font-size: var(--font-size-xs);
 }
 
 .open-post__members img {
@@ -102,7 +102,7 @@
   position: absolute;
   bottom: 5px;
   right: 3px;
-  font-size: 12px;
+  font-size: var(--font-size-xs);
 }
 
 .open-post__heart-count span {

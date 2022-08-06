@@ -1,0 +1,23 @@
+.chat-screen {
+  background-color: var(--skyblue);
+  height: 1000vh;
+}
+
+.chat {
+  background-color: var(--skyblue);
+}
+
+.main-chat {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chat__timestamp {
+  font-size: var(--font-size-xs);
+  color: white;
+  background-color: var(--main-opacity);
+  padding: 10px;
+  border-radius: 16px;
+}

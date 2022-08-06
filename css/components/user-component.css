@@ -19,21 +19,21 @@
 
 .user-component__title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: var(--font-size-lg);
 }
 .user-component__title--sm {
   font-weight: 700;
-  font-size: 15px;
+  font-size: var(--font-size-sm);
 }
 
 .user-component__subtitle {
   margin-top: 8px;
-  font-size: 15px;
+  font-size: var(--font-size-sm);
   display: flex;
 }
 .user-component__subtitle--sm {
   margin-top: 8px;
-  font-size: 12px;
+  font-size: var(--font-size-xs);
 }
 
 .user-component__avatar--xl {
@@ -69,4 +69,8 @@
 .user-component__notification {
   color: tomato;
   margin-left: 5px;
+}
+
+.user-component__text h6 {
+  font-size: var(--font-size-xs);
 }

@@ -1,0 +1,40 @@
+.alt-header {
+  position: fixed;
+  top: 28px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px var(--horizontal-space);
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 1;
+}
+/* 핵 */
+.alt-header__column {
+  width: 33%;
+}
+
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+
+.alt-header__column:last-child {
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.alt-header__title {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.alt-header__column span:last-child {
+  margin-left: 20px;
+}
