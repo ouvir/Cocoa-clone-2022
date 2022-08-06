@@ -20,4 +20,58 @@
   background-color: var(--main-opacity);
   padding: 10px;
   border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.message-row {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.message-row img {
+  border-radius: 40%;
+  margin-right: 10px;
+}
+
+.message__author {
+  opacity: 0.8;
+  font-size: var(--font-size-sm);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  margin-right: 8px;
+  font-size: var(--font-size-lg);
+}
+
+.message__time {
+  opacity: 0.8;
+  font-size: var(--font-size-xs);
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+  margin-right: 0px;
+  margin-left: 8px;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
 }
