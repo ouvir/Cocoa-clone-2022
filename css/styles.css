@@ -21,7 +21,6 @@
 
 body {
   font-family: "Edu NSW ACT Foundation", cursive;
-  height: 1000px;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
