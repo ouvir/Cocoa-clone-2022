@@ -1,5 +1,5 @@
 .setting-screen {
-  margin-top: 100px;
+  margin: 100px 0px;
 }
 
 .settings__setting {
@@ -12,8 +12,21 @@
   justify-content: space-between;
 }
 
-.settings__setting i {
+.settings__setting span:first-child {
+  display: block;
+  width: 25px;
+  height: 25px;
   margin-right: 15px;
+}
+
+.settings__setting-column:first-child {
+  display: flex;
+  width: 50vw;
+  justify-content: flex-start;
+}
+
+.settings__setting-column:first-child div {
+  margin-left: 10px;
 }
 
 .settings__setting-column:last-child {

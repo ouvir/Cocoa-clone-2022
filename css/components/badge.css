@@ -8,6 +8,7 @@
   height: 20px;
   border-radius: 50%;
   color: white;
+  font-size: var(--font-size-sm);
 }
 
 .badge--dot {
