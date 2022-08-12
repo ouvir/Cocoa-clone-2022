@@ -6,8 +6,8 @@
   --horizontal-space: 25px;
   --main-opacity: rgba(0, 0, 0, 0.1);
   --main-border: 1px solid var(--main-opacity);
-  --font-size-xl: 36px;
-  --font-size-lg: 30px;
-  --font-size-sm: 26px;
-  --font-size-xs: 22px;
+  --font-size-xl: 26px;
+  --font-size-lg: 20px;
+  --font-size-sm: 16px;
+  --font-size-xs: 12px;
 }

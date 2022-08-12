@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./routes/Login";
 import NoShow from "./components/NoShow";
+import Login from "./routes/Login";
+import Home from "./routes/Home";
 import "./styles.css";
 
 function App() {
@@ -9,18 +10,15 @@ function App() {
   window.onresize = (event) => {
     setSize(window.innerWidth);
   };
-  console.log(size);
   return (
     <div className="main">
-      {size >= 700 ? (
+      {size >= 800 ? (
         <NoShow />
       ) : (
         <Router>
           <Routes>
             <Route path="/" element={<Login />} />
-          </Routes>
-          <Routes>
-            <Route path="/home" element={<Login />} />
+            <Route path="/home" element={<Home />} />
           </Routes>
         </Router>
       )}

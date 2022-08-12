@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Login.module.css";
 import styles from "./Login.module.css";
 
-function Login() {
+function Login(props) {
   return (
     <div>
       <header className={styles.welcome_header}>
@@ -19,13 +19,11 @@ function Login() {
 
       <form method="get" className={styles.login_form}>
         <input
-          name="username"
           className={styles.login_form__input}
           type="text"
           placeholder="Email or phone number"
         />
         <input
-          name="password"
           className={styles.login_form__input}
           type="password"
           placeholder="Password"
