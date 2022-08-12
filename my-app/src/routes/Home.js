@@ -1,4 +1,9 @@
+import StatusBar from "../components/StatusBar";
 function Home() {
-  return <div>hello</div>;
+  return (
+    <div>
+      <StatusBar />
+    </div>
+  );
 }
 export default Home;
