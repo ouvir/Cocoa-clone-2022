@@ -1,0 +1,74 @@
+/* welcome_header */
+.welcome_header {
+  padding: 90px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+.welcome_header__img {
+  width: 100px;
+}
+
+.welcome_header__title {
+  margin-bottom: 40px;
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  transition: color 1s ease-out;
+}
+
+.welcome_header__title:hover {
+  color: var(--yellow);
+}
+
+.welcome_header__text {
+  width: 60%;
+  opacity: 0.6;
+  transition: color 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.welcome_header__text:hover {
+  color: var(--brown);
+  opacity: 1;
+}
+
+/* login_form */
+.login_form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+
+.login_form input {
+  border: none;
+  padding: 20px 0px;
+  font-size: var(--font-size-sm);
+  margin-bottom: 20px;
+}
+
+.login_form__input::placeholder {
+  font-family: "Edu NSW ACT Foundation", cursive;
+  color: var(--gray);
+}
+
+.login_form__input:focus {
+  border-color: var(--brown);
+}
+
+.login_form__btn {
+  width: 100%;
+  height: auto;
+  background-color: var(--brown);
+  opacity: 0.9;
+  color: whitesmoke;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Edu NSW ACT Foundation", cursive;
+}
+
+.login_form__a {
+  text-align: center;
+  font-size: var(--font-size-xs);
+}
