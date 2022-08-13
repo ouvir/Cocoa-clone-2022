@@ -11,6 +11,7 @@ import {
   faRightFromBracket,
 } from "@fortawesome/free-solid-svg-icons";
 import { faBell, faComment, faUser } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 import styles from "./Settings.module.css";
 
 function Settings() {
@@ -18,9 +19,9 @@ function Settings() {
     <div>
       <header className="alt_header">
         <div className="alt_header__column">
-          <a href="more.html">
+          <Link to="/home">
             <FontAwesomeIcon icon={faAngleLeft} size="2x" />
-          </a>
+          </Link>
         </div>
         <div className="alt_header__column">
           <h1 className="alt_header__title">Settings</h1>
@@ -79,21 +80,21 @@ function Settings() {
             <div className={styles.settings__setting_column}></div>
           </li>
           <li className={styles.settings__setting}>
-            <a href="friends.html" className={styles.settings__setting_column}>
+            <Link to="/home" className={styles.settings__setting_column}>
               <span>
                 <FontAwesomeIcon icon={faUser} />
               </span>
               <span>Friends</span>
-            </a>
+            </Link>
             <div className={styles.settings__setting_column}></div>
           </li>
           <li className={styles.settings__setting}>
-            <a href="chats.html" className={styles.settings__setting_column}>
+            <Link to="/home" className={styles.settings__setting_column}>
               <span>
                 <FontAwesomeIcon icon={faComment} />
               </span>
               <span>Chats</span>
-            </a>
+            </Link>
             <div className={styles.settings__setting_column}></div>
           </li>
           <li className={styles.settings__setting}>
@@ -117,12 +118,12 @@ function Settings() {
             <div className={styles.settings__setting_column}>Default theme</div>
           </li>
           <li className={styles.settings__setting}>
-            <a href="index.html" className={styles.settings__setting_column}>
+            <Link to="/" className={styles.settings__setting_column}>
               <span>
                 <FontAwesomeIcon icon={faRightFromBracket} />
               </span>
               <span>Log out</span>
-            </a>
+            </Link>
             <div className={styles.settings__setting_column}></div>
           </li>
         </ul>
