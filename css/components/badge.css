@@ -11,7 +11,7 @@
   font-size: var(--font-size-sm);
 }
 
-.badge--dot {
+.badge_dot {
   background-color: tomato;
   display: block;
   width: 5px;

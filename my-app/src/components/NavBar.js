@@ -1,32 +1,57 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faComment,
+  faEllipsis,
+  faMagnifyingGlass,
+} from "@fortawesome/free-solid-svg-icons";
+
+import {
+  faUser as faUser2,
+  faComment as faComment2,
+} from "@fortawesome/free-regular-svg-icons";
 import styles from "./NavBar.module.css";
+import { useState } from "react";
 
 function NavBar() {
+  const [index, setIndex] = useState("0");
+  const onClick = (event) => {
+    setIndex(event.currentTarget.value);
+  };
   return (
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="fa-regular fa-user fa-2x"></i>
-          </a>
+    <nav className={styles.nav}>
+      <ol className={styles.nav__list}>
+        <li className={styles.nav__btn}>
+          <button className={styles.nav__link} onClick={onClick} value={0}>
+            {index === "0" ? (
+              <FontAwesomeIcon icon={faUser} size="2x" />
+            ) : (
+              <FontAwesomeIcon icon={faUser2} size="2x" />
+            )}
+          </button>
         </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
-          </a>
+        <li className={styles.nav__btn}>
+          <button className={styles.nav__link} onClick={onClick} value={1}>
+            <span className={styles.nav__notification}>1</span>
+            {index === "1" ? (
+              <FontAwesomeIcon icon={faComment} size="2x" />
+            ) : (
+              <FontAwesomeIcon icon={faComment2} size="2x" />
+            )}
+          </button>
         </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-          </a>
+        <li className={styles.nav__btn}>
+          <button className={styles.nav__link} onClick={onClick} value={2}>
+            <FontAwesomeIcon icon={faMagnifyingGlass} size="2x" />
+          </button>
         </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <div class="nav__notification--dot badge--dot"></div>
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
-          </a>
+        <li className={styles.nav__btn}>
+          <button className={styles.nav__link} onClick={onClick} value={3}>
+            <div className={styles.nav__notification_dot}></div>
+            <FontAwesomeIcon icon={faEllipsis} size="2x" />
+          </button>
         </li>
-      </ul>
+      </ol>
     </nav>
   );
 }
