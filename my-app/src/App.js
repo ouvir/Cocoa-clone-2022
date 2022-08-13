@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoShow from "./components/NoShow";
 import Login from "./routes/Login";
 import Home from "./routes/Home";
+import Settings from "./routes/Settings";
 import "./styles.css";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Login />} />
             <Route path="/home" element={<Home />} />
+            <Route path="/settings" element={<Settings />}></Route>
           </Routes>
         </Router>
       )}

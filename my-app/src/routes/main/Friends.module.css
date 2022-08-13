@@ -57,3 +57,7 @@
   width: 200px;
   height: 300px;
 }
+
+.gear__notification {
+  position: relative;
+}

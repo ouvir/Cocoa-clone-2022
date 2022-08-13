@@ -7,11 +7,11 @@ import {
   faChevronRight,
   faChevronUp,
 } from "@fortawesome/free-solid-svg-icons";
-
+import { Link } from "react-router-dom";
 import styles from "./Friends.module.css";
 function Friends() {
   return (
-    <div>
+    <div className={styles.friends}>
       <header className="screen_header">
         <h1 className="screen_header__title">Friends</h1>
         <div className="screen_header__icons">
@@ -22,11 +22,11 @@ function Friends() {
             <FontAwesomeIcon icon={faMusic} size="lg" />
           </span>
           <span className={styles.gear__notification}>
-            <div id="Link넣어줄꺼">
+            <Link to="/settings">
               <FontAwesomeIcon icon={faGear} size="lg" />
-            </div>
+            </Link>
             <span
-              className={`${styles.screen_header__notification__dot} badge__dot`}
+              className={"screen_header__notification__dot badge_dot"}
             ></span>
           </span>
         </div>
