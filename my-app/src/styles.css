@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@600;700&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "badge.css";
+/* componnent */
+@import "./components/css/badge.css";
+@import "./components/css/user-component.css";
+@import "./components/css/screen-header.css";
+@import "./components/css/alt-screen-header.css";
+@import "./components/css/icon-row.css";
 
 html {
   font-family: "Edu NSW ACT Foundation", cursive;
