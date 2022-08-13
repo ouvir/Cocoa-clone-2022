@@ -11,13 +11,16 @@ import {
   faComment as faComment2,
 } from "@fortawesome/free-regular-svg-icons";
 import styles from "./NavBar.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-function NavBar() {
+function NavBar(props) {
   const [index, setIndex] = useState("0");
   const onClick = (event) => {
     setIndex(event.currentTarget.value);
   };
+  useEffect(() => {
+    props.getIndex(index);
+  }, [index]);
   return (
     <nav className={styles.nav}>
       <ol className={styles.nav__list}>
