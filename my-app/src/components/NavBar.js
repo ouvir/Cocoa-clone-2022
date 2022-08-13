@@ -15,12 +15,13 @@ import { useEffect, useState } from "react";
 
 function NavBar(props) {
   const [index, setIndex] = useState("0");
+  const P = props;
   const onClick = (event) => {
     setIndex(event.currentTarget.value);
   };
   useEffect(() => {
-    props.getIndex(index);
-  }, [index]);
+    P.getIndex(index);
+  }, [index, P]);
   return (
     <nav className={styles.nav}>
       <ol className={styles.nav__list}>
@@ -35,7 +36,7 @@ function NavBar(props) {
         </li>
         <li className={styles.nav__btn}>
           <button className={styles.nav__link} onClick={onClick} value={1}>
-            <span className={styles.nav__notification}>1</span>
+            <span className={`${styles.nav__notification} badge`}>1</span>
             {index === "1" ? (
               <FontAwesomeIcon icon={faComment} size="2x" />
             ) : (
