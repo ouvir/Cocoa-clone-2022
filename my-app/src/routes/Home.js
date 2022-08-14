@@ -4,6 +4,7 @@ import { useState } from "react";
 import Friends from "./main/Friends";
 import Chats from "./main/Chats";
 import Find from "./main/Find";
+import More from "./main/More";
 
 function Home() {
   const [main, setMain] = useState("0");
@@ -19,7 +20,7 @@ function Home() {
       case "2":
         return <Find />;
       case "3":
-        return <div>3</div>;
+        return <More />;
       default:
         return null;
     }
