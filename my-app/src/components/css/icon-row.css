@@ -1,9 +1,9 @@
-.icon-row {
+.icon_row {
   display: flex;
   padding-bottom: 25px;
 }
 
-.icon-row__icon {
+.icon_row__icon {
   width: 25%;
   display: flex;
   flex-direction: column;
@@ -11,11 +11,11 @@
   color: var(--brown);
 }
 
-.icon-row__icon i {
+.icon_row__icon svg {
   font-size: var(--font-size-lg);
 }
 
-.icon-row__icon span {
+.icon_row__icon span {
   margin-top: 15px;
   font-size: var(--font-size-sm);
   text-align: center;

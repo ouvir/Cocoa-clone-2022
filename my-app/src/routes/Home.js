@@ -3,6 +3,7 @@ import NavBar from "../components/NavBar";
 import { useState } from "react";
 import Friends from "./main/Friends";
 import Chats from "./main/Chats";
+import Find from "./main/Find";
 
 function Home() {
   const [main, setMain] = useState("0");
@@ -16,7 +17,7 @@ function Home() {
       case "1":
         return <Chats />;
       case "2":
-        return <div>2</div>;
+        return <Find />;
       case "3":
         return <div>3</div>;
       default:

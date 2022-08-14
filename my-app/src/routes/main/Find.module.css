@@ -1,14 +1,14 @@
-.recommended-friends {
+.recommended_friends {
   border-top: var(--main-border);
   padding: 15px 0px;
 }
 
-.recommended-friends__title {
+.recommended_friends__title {
   font-size: var(--font-size-xs);
   color: var(--gray);
 }
 
-.recommended-friends span {
+.recommended_friends span {
   margin: 80px 0;
   display: block;
   text-align: center;
@@ -16,67 +16,67 @@
   color: var(--gray);
 }
 
-.open-chat {
+.open_chat {
   border-top: var(--main-border);
   padding: 15px 0px;
 }
 
-.open-chat__header {
+.open_chat__header {
   display: flex;
   justify-content: space-between;
   color: var(--gray);
   margin-bottom: 25px;
 }
 
-.open-chat__header span {
+.open_chat__header span {
   font-size: var(--font-size-xs);
   opacity: 0.8;
 }
-.open-chat__title {
+.open_chat__title {
   font-size: var(--font-size-xs);
 }
 
-.open-post {
+.open_post {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.open-post__title {
+.open_post__title {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: var(--font-size-sm);
 }
 
-.open-post__hashtags {
+.open_post__hashtags {
   text-transform: uppercase;
   color: var(--gray);
   font-size: var(--font-size-xs);
 }
 
-.open-post__members {
+.open_post__members {
   margin-top: 5px;
   display: flex;
   align-items: center;
   font-size: var(--font-size-xs);
 }
 
-.open-post__members img {
+.open_post__members img {
   margin-right: 5px;
 }
 
-.open-post__member-count {
+.open_post__member_count {
   color: var(--gray);
 }
 
-.open-post__members .divider {
+.open_post__members .divider {
   width: 2px;
   height: 10px;
   margin: 0 5px;
   background-color: var(--main-opacity);
 }
 
-.open-post__member-status {
+.open_post__member_status {
   color: #ffb0e0;
 }
 
@@ -95,21 +95,21 @@
   }
 }
 
-.open-post__photo {
+.open_post__photo {
   position: relative;
 }
 
-.open-post__photo:hover .open-post__heart-count i {
+.open_post__photo:hover .open_post__heart_count svg {
   animation: heartBeat 900ms ease-in-out infinite;
 }
 
-.open-post__photo img {
+.open_post__photo img {
   width: 80px;
   height: 80px;
   border-radius: 10px;
 }
 
-.open-post__heart-count {
+.open_post__heart_count {
   background-color: var(--gray);
   color: white;
   padding: 3px 5px;
@@ -121,10 +121,10 @@
   font-size: var(--font-size-xs);
 }
 
-.open-post__heart-count span {
+.open_post__heart_count span {
   margin-left: 3px;
 }
 
-.open-post__photo a {
+.open_post__photo a {
   display: none;
 }
