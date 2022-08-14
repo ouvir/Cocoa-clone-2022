@@ -13,7 +13,7 @@ function App() {
   };
   useEffect(() => {
     setSize(window.innerWidth);
-  }, [size]);
+  }, []);
   return (
     <div className="main">
       {size >= 800 ? (
