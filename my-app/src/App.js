@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import NoShow from "./components/NoShow";
 import Login from "./routes/Login";
@@ -8,9 +8,12 @@ import "./styles.css";
 
 function App() {
   const [size, setSize] = useState(0);
-  window.onresize = (event) => {
+  window.onresize = () => {
     setSize(window.innerWidth);
   };
+  useEffect(() => {
+    setSize(window.innerWidth);
+  }, [size]);
   return (
     <div className="main">
       {size >= 800 ? (
