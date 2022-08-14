@@ -21,7 +21,7 @@ function Friends() {
           <span>
             <FontAwesomeIcon icon={faMusic} size="lg" />
           </span>
-          <span className={styles.gear__notification}>
+          <span className="gear__notification">
             <Link to="/settings">
               <FontAwesomeIcon icon={faGear} size="lg" />
             </Link>

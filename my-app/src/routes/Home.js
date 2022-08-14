@@ -2,6 +2,8 @@ import StatusBar from "../components/StatusBar";
 import NavBar from "../components/NavBar";
 import { useState } from "react";
 import Friends from "./main/Friends";
+import Chats from "./main/Chats";
+
 function Home() {
   const [main, setMain] = useState("0");
   const getIndex = (data) => {
@@ -12,7 +14,7 @@ function Home() {
       case "0":
         return <Friends />;
       case "1":
-        return <div>1</div>;
+        return <Chats />;
       case "2":
         return <div>2</div>;
       case "3":
