@@ -25,7 +25,7 @@ function Home() {
     }
   };
   return (
-    <div>
+    <div className="container">
       <StatusBar />
       <CreateMain />
       <NavBar getIndex={getIndex} />
