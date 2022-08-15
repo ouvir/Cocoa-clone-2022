@@ -33,7 +33,7 @@ function Chats() {
         </div>
       </header>
       <main className="main_screen">
-        <Link to="/chat">
+        <Link to={`/chat-cocoa`}>
           <div className="user_component">
             <div className="user_component__column">
               <img
